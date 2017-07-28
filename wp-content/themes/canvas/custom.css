@@ -1,0 +1,88 @@
+/*
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it
+is easier to update the theme. Simply copy an existing style
+from style.css to this file, and modify it to your liking. */
+
+
+/* GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+
+
+
+
+/* DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+@media only screen and (min-width: 768px) {
+	/* Desktop styles go below this line */
+}
+
+
+/* footer - changes logo /copyrigth /social icons*/
+#social_widget-3 {
+  margin-right: 2.4%;
+}
+.social li {
+    display: inline-block;
+}
+#social_widget-3 .subscribe a{
+    text-align: center;
+    background-color: #414040;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font: 600 13px/1.5em "Helvetica Neue", Helvetica, sans-serif;
+}
+#social_widget-3 .subscribe a:hover{
+  background-color: #1f1f1f;
+}
+#social_widget-3 .footer-text p{
+  font: 300 13px/1.5em "Helvetica Neue", Helvetica, sans-serif;
+  color: #7a7a7a;
+}
+#social_widget-3 .subscribe{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: inline-flex;
+}
+#social_widget-3 .social li {
+    display: inline-block;
+    background-color: #414040;
+    border-radius: 7px;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 1px;
+}
+#social_widget-3 .social li .fa {
+    height: 32px;
+    width: 32px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+#social_widget-3 .social li a .fa {
+    left: 10px;
+}
+#social_widget-3 .social li a:hover {
+    text-decoration: none;
+}
+#social_widget-3 .social li:hover {
+    background-color: #1f1f1f;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
+}
+.img-logo {
+    margin-top: 15px;
+}
+

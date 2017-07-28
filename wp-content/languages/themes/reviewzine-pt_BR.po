@@ -1,0 +1,472 @@
+# Translation of Themes - ReviewZine in Portuguese (Brazil)
+# This file is distributed under the same license as the Themes - ReviewZine package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-06-12 15:52:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Themes - ReviewZine\n"
+
+#. Description of the plugin/theme
+msgid "A modern and clean free WordPress theme for tech magazines, news and newspaper media websites, personal fashion blogs, or photography, ReviewZine is responsive, flat, minimalist, SEO friendly, Retina ready, built with Bootstrap, and has social links. Released in 2016, the theme has Google AdSense banners, a magazine homepage template, custom backgrounds, filtered categories, tags, boxed layout, and live customizer. ReviewZine is WPML, Photo Gallery Grid,Contact Form 7,WP Product Review, SiteOrigin Page Builder, JetPack compatible, the theme is highly customizable and translation ready."
+msgstr "Um tema WordPress gratuito moderno e limpo feito para revistas de tecnologia, portais de notícias e publicações, blogs pessoais de moda ou fotografia. O ReviewZine é responsivo, baseado no Bootstrap e tem um design plano e minimalista. Lançado em 2016, o tema tem espera para anúncios Google AdSense, é preparado para SEO e telas Retina. Em seus recursos, encontramos um modelo de página inicial para publicações, links sociais, fundos personalizados, filtros de categorias, marcações, leiaute em caixa e o Personalizador ao vivo. O ReviewZine é compatível com os plug-ins WPML, Photo Gallery Grid, Contact Form 7, WP Product Review, SiteOrigin Page Builder e JetPack, tornando-o pronto para traduções e altamente personalizável."
+
+#: functions.php:555
+msgid "Primary Menu"
+msgstr "Menu primário"
+
+#: template-parts/content-single.php:137
+msgid "Related Posts"
+msgstr "Posts relacionados"
+
+#: template-parts/content-single.php:128
+msgid "Author"
+msgstr "Autor"
+
+#: template-parts/content-single.php:95
+msgid "Categories:"
+msgstr "Categorias:"
+
+#: template-parts/content-single.php:84
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: template-parts/content-single.php:81
+msgid "Continue Reading"
+msgstr "Continuar a ler"
+
+#: functions.php:497 template-parts/content-template3.php:38
+#: template-parts/content-template3.php:107
+#: template-parts/content-template3.php:171
+#: template-parts/content-template3.php:233
+#: template-parts/content-template4.php:37
+#: template-parts/content-template4.php:100
+msgid "Category"
+msgstr "Categoria"
+
+#: functions.php:419
+msgctxt "month date format"
+msgid "F"
+msgstr "F"
+
+#: functions.php:365
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está esperando pela moderação."
+
+#: functions.php:361
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#. translators: 1 - the comment date, 2 - the comment title
+#: functions.php:360
+msgid "<span class=\"comment-date\">(%1$s - %2$s)</span>"
+msgstr "<span class=\"comment-date\">(%1$s - %2$s)</span>"
+
+#. translators: %s - the comment authors link
+#: functions.php:351
+msgid "<h4 class=\"media-heading\">%s</h4>"
+msgstr "<h4 class=\"media-heading\">%s</h4>"
+
+#: functions.php:320
+msgid "Comments"
+msgstr "Comentários"
+
+#: functions.php:248
+msgid "WordPress"
+msgstr "WordPress"
+
+#. #-#-#-#-#  reviewzine.pot (ReviewZine 1.0.6)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: functions.php:247
+msgid "ReviewZine"
+msgstr "ReviewZine"
+
+#. translators: 1 - Theme name , 2 - WordPress link
+#: functions.php:246
+msgid "%1$s powered by %2$s"
+msgstr "%1$s desenvolvido em %2$s"
+
+#: functions.php:123
+msgid "WP Product Review"
+msgstr "WP Product Review"
+
+#: functions.php:20
+msgctxt "Hind font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lora, translate this to 'off'. Do not translate into your own language.
+#: functions.php:19
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "on"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: class-tgm-plugin-activation.php:3531
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalando o plug-in %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:3529
+msgid "All installations have been completed."
+msgstr "Todas as instalações foram concluídas."
+
+#. translators: 1: plugin name.
+#: class-tgm-plugin-activation.php:3528
+msgid "%1$s installed successfully."
+msgstr "%1$s instalado com sucesso."
+
+#: class-tgm-plugin-activation.php:3526
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "O processo de instalação está iniciando. Isso poderá levar algum tempo em alguns servidores, por isso seja paciente, por favor."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: class-tgm-plugin-activation.php:3523
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalando e ativando o plug-in %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:3521
+msgid "All installations and activations have been completed."
+msgstr "Todas as instalações e ativações foram concluídas."
+
+#: class-tgm-plugin-activation.php:3520 class-tgm-plugin-activation.php:3528
+msgid "Hide Details"
+msgstr "Ocultar detalhes"
+
+#: class-tgm-plugin-activation.php:3520 class-tgm-plugin-activation.php:3528
+msgid "Show Details"
+msgstr "Mostrar detalhes"
+
+#. translators: 1: plugin name.
+#: class-tgm-plugin-activation.php:3520
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s instalado e ativado com sucesso."
+
+#: class-tgm-plugin-activation.php:3518
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "O processo de instalação e ativação está iniciando. Isso poderá levar algum tempo em alguns servidores, por isso seja paciente, por favor. "
+
+#. translators: 1: plugin name.
+#: class-tgm-plugin-activation.php:3514
+msgid "The installation of %1$s failed."
+msgstr "A instalação de %1$s falhou."
+
+#. translators: 1: plugin name, 2: error message.
+#: class-tgm-plugin-activation.php:3512
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Ocorreu um erro ao instalar %1$s: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: class-tgm-plugin-activation.php:3509
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Atualizando o plugin %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:3169
+msgid "Plugin activation failed."
+msgstr "A ativação do plug-in falhou."
+
+#: class-tgm-plugin-activation.php:2945
+msgid "No plugins are available to be activated at this time."
+msgstr "Nenhum plug-in está disponível para ser ativado neste momento."
+
+#: class-tgm-plugin-activation.php:2919
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Nenhum plug-in foi selecionado para ser ativado. Nenhuma ação foi realizada."
+
+#: class-tgm-plugin-activation.php:2813
+msgid "No plugins are available to be updated at this time."
+msgstr "Nenhum plug-in está disponível para ser atualizado neste momento."
+
+#: class-tgm-plugin-activation.php:2811
+msgid "No plugins are available to be installed at this time."
+msgstr "Nenhum plug-in está disponível para ser instalado neste momento."
+
+#: class-tgm-plugin-activation.php:2770
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Nenhum plug-in foi selecionado para ser atualizado. Nenhuma ação foi realizada."
+
+#: class-tgm-plugin-activation.php:2768
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Nenhum plug-in foi selecionado para ser instalado. Nenhuma ação foi realizada."
+
+#: class-tgm-plugin-activation.php:2737
+msgid "Activate"
+msgstr "Ativar"
+
+#: class-tgm-plugin-activation.php:2734
+msgid "Update"
+msgstr "Atualizar"
+
+#: class-tgm-plugin-activation.php:2728
+msgid "Install"
+msgstr "Instalar"
+
+#: class-tgm-plugin-activation.php:2695
+msgid "Upgrade message from the plugin author:"
+msgstr "Mensagem do autor do plug-in sobre a atualização:"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: class-tgm-plugin-activation.php:2625
+msgid "Activate %2$s"
+msgstr "Ativar %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: class-tgm-plugin-activation.php:2619
+msgid "Update %2$s"
+msgstr "Atualizar %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: class-tgm-plugin-activation.php:2614
+msgid "Install %2$s"
+msgstr "Instalar %2$s"
+
+#: class-tgm-plugin-activation.php:2565
+msgid "Status"
+msgstr "Status"
+
+#: class-tgm-plugin-activation.php:2564
+msgid "Version"
+msgstr "Versão"
+
+#: class-tgm-plugin-activation.php:2560
+msgid "Type"
+msgstr "Tipo"
+
+#: class-tgm-plugin-activation.php:2559
+msgid "Source"
+msgstr "Origem"
+
+#: class-tgm-plugin-activation.php:2558
+msgid "Plugin"
+msgstr "Plug-in"
+
+#: class-tgm-plugin-activation.php:2544
+msgid "No plugins to install, update or activate."
+msgstr "Não há plug-ins para instalar, atualizar ou ativar."
+
+#: class-tgm-plugin-activation.php:2521
+msgid "Available version:"
+msgstr "Versão disponível:"
+
+#: class-tgm-plugin-activation.php:2509
+msgid "Minimum required version:"
+msgstr "Versão mínima exigida:"
+
+#: class-tgm-plugin-activation.php:2501
+msgid "Installed version:"
+msgstr "Versão instalada:"
+
+#: class-tgm-plugin-activation.php:2493
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "desconhecida"
+
+#. translators: 1: number of plugins.
+#: class-tgm-plugin-activation.php:2411
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "A ativar <span class=\"count\">(%s)</span>"
+msgstr[1] "A ativar <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: class-tgm-plugin-activation.php:2407
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span> atualização disponível"
+msgstr[1] "<span class=\"count\">(%s)</span> atualizações disponíveis"
+
+#. translators: 1: number of plugins.
+#: class-tgm-plugin-activation.php:2403
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "A instalar <span class=\"count\">(%s)</span>"
+msgstr[1] "A instalar <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: class-tgm-plugin-activation.php:2399
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span>"
+msgstr[1] "Todos os <span class=\"count\">(%s)</span>"
+
+#. translators: 1: install status, 2: update status
+#: class-tgm-plugin-activation.php:2353
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: class-tgm-plugin-activation.php:2344
+msgid "Update recommended"
+msgstr "Atualização recomendada"
+
+#: class-tgm-plugin-activation.php:2341
+msgid "Requires Update"
+msgstr "Atualização exigida"
+
+#: class-tgm-plugin-activation.php:2338
+msgid "Required Update not Available"
+msgstr "Atualização exigida não disponível"
+
+#: class-tgm-plugin-activation.php:2332
+msgid "Active"
+msgstr "Ativo"
+
+#: class-tgm-plugin-activation.php:2330
+msgid "Installed But Not Activated"
+msgstr "Instalado mas não ativado"
+
+#: class-tgm-plugin-activation.php:2326
+msgid "Not Installed"
+msgstr "Não instalado"
+
+#: class-tgm-plugin-activation.php:2309
+msgid "Pre-Packaged"
+msgstr "Incluído no pacote"
+
+#: class-tgm-plugin-activation.php:2306
+msgid "External Source"
+msgstr "Fonte externa"
+
+#: class-tgm-plugin-activation.php:2303
+msgid "WordPress Repository"
+msgstr "Repositório do WordPress"
+
+#: class-tgm-plugin-activation.php:2287
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: class-tgm-plugin-activation.php:2284
+msgid "Required"
+msgstr "Necessário"
+
+#. translators: %s: version number
+#: class-tgm-plugin-activation.php:1993
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: class-tgm-plugin-activation.php:1127 class-tgm-plugin-activation.php:2959
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "e"
+
+#: class-tgm-plugin-activation.php:940
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "O pacote remoto do plug-in consiste de mais de um arquivo, mas os arquivos não estão reunidos em uma pasta."
+
+#: class-tgm-plugin-activation.php:934 class-tgm-plugin-activation.php:940
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "Por favor, entre em contato com o desenvolvedor do plug-in e solicite um pacote de acordo com as diretrizes do WordPress."
+
+#: class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "O pacote remoto do plug-in não contém uma pasta com o \"slug\" desejado e não foi possível renomeá-lo."
+
+#: class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr "Atualização necessária"
+
+#: class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Este plug-in precisa ser atualizado para estar compatível com o tema."
+
+#: class-tgm-plugin-activation.php:395
+msgid "Please contact the administrator of this site for help."
+msgstr "Por favor, contate o administrador deste site para qualquer auxílio."
+
+#: class-tgm-plugin-activation.php:394
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "Há um ou mais plug-ins necessários ou recomendados para instalar, atualizar ou ativar."
+
+#: class-tgm-plugin-activation.php:393
+msgid "Dismiss this notice"
+msgstr "Dispensar este aviso"
+
+#. translators: 1: dashboard link.
+#: class-tgm-plugin-activation.php:392
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Todos os plug-ins foram instalados e ativados com sucesso. %1$s"
+
+#. translators: 1: plugin name.
+#: class-tgm-plugin-activation.php:390
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "O plug-in não foi ativado. É necessária uma versão mais atualizada do %s para este tema. Por favor, atualize o plug-in. "
+
+#. translators: 1: plugin name.
+#: class-tgm-plugin-activation.php:388
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Nenhuma ação foi realizada. O plug-in %1$s já estava ativado."
+
+#: class-tgm-plugin-activation.php:386 class-tgm-plugin-activation.php:2963
+msgid "The following plugin was activated successfully:"
+msgstr "O seguinte plug-in foi ativado com sucesso:"
+
+#: class-tgm-plugin-activation.php:385 class-tgm-plugin-activation.php:3170
+msgid "Plugin activated successfully."
+msgstr "Plug-in ativado com sucesso."
+
+#: class-tgm-plugin-activation.php:384 class-tgm-plugin-activation.php:827
+#: class-tgm-plugin-activation.php:2544 class-tgm-plugin-activation.php:3591
+msgid "Return to the Dashboard"
+msgstr "Voltar ao Painel"
+
+#: class-tgm-plugin-activation.php:383
+msgid "Return to Required Plugins Installer"
+msgstr "Voltar para o instalador de plug-ins "
+
+#: class-tgm-plugin-activation.php:378
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Iniciar ativação do plug-in"
+msgstr[1] "Iniciar ativação dos plug-ins"
+
+#: class-tgm-plugin-activation.php:373
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Iniciar atualização do plug-in"
+msgstr[1] "Iniciar atualização dos plug-ins"
+
+#. translators: 1: plugin name(s).
+#: class-tgm-plugin-activation.php:368
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Iniciar instalação do plug-in"
+msgstr[1] "Iniciar instalação dos plug-ins"
+
+#: class-tgm-plugin-activation.php:331
+msgid "Something went wrong with the plugin API."
+msgstr "Alguma coisa deu errado com a API do plug-in."
+
+#. translators: %s: plugin name.
+#: class-tgm-plugin-activation.php:330
+msgid "Updating Plugin: %s"
+msgstr "Atualizando plug-in: %s"
+
+#. translators: %s: plugin name.
+#: class-tgm-plugin-activation.php:328
+msgid "Installing Plugin: %s"
+msgstr "Instalando o plug-in %s"
+
+#: class-tgm-plugin-activation.php:326
+msgid "Install Plugins"
+msgstr "Instalar plug-ins"
+
+#: class-tgm-plugin-activation.php:325
+msgid "Install Required Plugins"
+msgstr "Instalar plug-ins necessários"
+
+#. Author URI of the plugin/theme
+msgid "http://themeisle.com"
+msgstr "http://themeisle.com"
+
+#. Author of the plugin/theme
+msgid "Themeisle"
+msgstr "Themeisle"
+
+#. Theme URI of the plugin/theme
+msgid "http://themeisle.com/themes/reviewzine/"
+msgstr "http://themeisle.com/themes/reviewzine/"

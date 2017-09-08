@@ -1,18 +1,26 @@
-<?php get_header(); ?>
-  <section id="mainContent">
-    <div class="row">
+<?php
+/**
+ * The template for displaying 404 pages (Not Found).
+ *
+ * @package Odin
+ * @since 2.2.0
+ */
 
-      <div class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
-        <div class="error_page_content">
-          <h1><?php _e( 'Nada encontrado', 'odin' ); ?></h1>
-          <h2>Desculpe :(</h2>
-          <h3><?php _e( 'Esta página não exite e/ou não foi encontrada.', 'odin' ); ?></h3>
-          <p class="wow fadeInLeftBig">Por favor, continue pela <a href="<?php echo home_url(); ?>">Página Inicial</a></p>
-        </div>
-        </div>
-      </div>
+get_header(); ?>
 
-    </div>
-  </section>
-</div>
-<?php get_footer(); ?>
+	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
+
+			<header class="page-header">
+				<h1 class="page-title"><?php _e( 'Not Found', 'odin' ); ?></h1>
+			</header>
+
+			<div class="page-content">
+				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'odin' ); ?></p>
+
+				<?php get_search_form(); ?>
+			</div><!-- .page-content -->
+
+	</main><!-- #main -->
+
+<?php
+get_footer();

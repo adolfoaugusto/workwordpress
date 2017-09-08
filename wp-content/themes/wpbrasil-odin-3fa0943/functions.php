@@ -20,19 +20,22 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 
+// $functions_path = get_template_directory() . '/functions/';
+$includes_path = get_template_directory() . '/libs/';
+
 /**
  * Odin Classes.
  */
 require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
 require_once get_template_directory() . '/core/classes/class-shortcodes.php';
-require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
-require_once get_template_directory() . '/core/classes/class-post-type.php';
-require_once get_template_directory() . '/core/classes/class-taxonomy.php';
 //require_once get_template_directory() . '/core/classes/class-shortcodes-menu.php';
+require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
 // require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
+require_once get_template_directory() . '/core/classes/class-post-type.php';
+require_once get_template_directory() . '/core/classes/class-taxonomy.php';
 // require_once get_template_directory() . '/core/classes/class-metabox.php';
-// require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
+require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
 // require_once get_template_directory() . '/core/classes/class-contact-form.php';
 // require_once get_template_directory() . '/core/classes/class-post-form.php';
 // require_once get_template_directory() . '/core/classes/class-user-meta.php';
@@ -63,8 +66,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		 */
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'odin' ),
-				'head' => __( 'Head', 'odin' ),
+				'top-menu' => __( 'Menu Topo', 'odin' )
 			)
 		);
 
@@ -72,6 +74,8 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		 * Add post_thumbnails suport.
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'new-custom-size', 1200, 800, TRUE );
+
 		/**
 		 * Add feed link.
 		 */
@@ -125,17 +129,17 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/**
 		 * Add support for Post Formats.
 		 */
-		add_theme_support( 'post-formats', array(
-		    'aside',
-		    'gallery',
-		    'link',
-		    'image',
-		    'quote',
-		    'status',
-		    'video',
-		    'audio',
-		    'chat'
-		) );
+		// add_theme_support( 'post-formats', array(
+		//     'aside',
+		//     'gallery',
+		//     'link',
+		//     'image',
+		//     'quote',
+		//     'status',
+		//     'video',
+		//     'audio',
+		//     'chat'
+		// ) );
 
 		/**
 		 * Support The Excerpt on pages.
@@ -221,12 +225,17 @@ function odin_enqueue_scripts() {
 
 	// Loads Odin main stylesheet.
 	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
-	wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/slick.css',array(),'1.0','all');
-	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.css',array(),'1.1','all');
-	wp_enqueue_style( 'theme', get_template_directory_uri() . '/assets/css/theme.css',array(),'1.2','all');
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css',array(),'1.3','all');
+	wp_enqueue_style( 'augusto-custom', $template_url.'/custom.css' , array(), '1.0.0', true );
+	wp_enqueue_style( 'cj-milligram', $template_url.'/dist-milligram/milligram.min.css' , array(), '1.0.0', true );
+	// wp_enqueue_style( 'cj-milligran-map', $template_url.'/dist-milligram/milligram.min.css.map' , array(), '1.0.0', true );
+		// if ( is_post_type_archive('videolessons') || ( is_single() && get_query_var('learningpaths') ) ){
+		//     wp_enqueue_script('jwplayer');
+		//     wp_enqueue_script( 'magnific_popup' ); // preview video
+		//     wp_enqueue_script( 'thumbnailPreview' );
+		//     wp_enqueue_script( 'nma_jquery_ui' );
 
-
+		// }
+	
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
 
@@ -324,6 +333,58 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
 
-define('FS_METHOD','direct');
+function bannerEspecial( $wp_customize ) {
+    // Fun code will go here
+    $wp_customize->add_section( 'placeholder_image_section' , array(
+        'title'       => __( 'Image banner archive /images', 'themeslug' ),
+        'priority'    => 30,
+        'description' => 'Upload a image banner archive /images',
+    ) );
+
+    $wp_customize->add_setting( 'imgslug_banner' );
+
+    // Setting: Text.
+    $wp_customize->add_setting( 'placeholder_text', array(
+        'type'                 => 'theme_mod',
+        'default'              => 'alt by img',
+        'transport'            => 'refresh', // Options: refresh or postMessage.
+        'capability'           => 'edit_theme_options',
+        'sanitize_callback'    => 'esc_attr'
+    ) );
+    // Control: Text.
+    $wp_customize->add_control( 'placeholder_text', array(
+        'label'       => __( 'Text image', 'themeslug' ),
+        'description' => __( 'Title for image', 'themeslug' ),
+        'section'     => 'placeholder_image_section',
+        'type'        => 'text'
+    ) );
+
+    // Setting: Link.
+    $wp_customize->add_setting( 'placeholder_link', array(
+        'type'                 => 'theme_mod',
+        'default'              => '/image/rest-slug-of-the-image/',
+        'transport'            => 'refresh', // Options: refresh or postMessage.
+        'capability'           => 'edit_theme_options',
+        'sanitize_callback'    => 'esc_attr'
+    ) );
+    // Control: link.
+    $wp_customize->add_control( 'placeholder_link', array(
+        'label'       => __( 'Link for video', 'themeslug' ),
+        'description' => __( 'Ex: http://newmastersacademy.org + /image/rest-slug-of-the-image/ . Result: http://newmastersacademy.org/image/rest-slug-of-the-image/', 'themeslug' ),
+        'section'     => 'placeholder_image_section',
+        'type'        => 'text'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'imgslug_banner', array(
+        'label'    => __( 'Image banner archive /images', 'themeslug' ),
+        'section'  => 'placeholder_image_section',
+        'settings' => 'imgslug_banner',
+    ) ) );
+}
+add_action( 'customize_register', 'bannerEspecial' );
+
+/**
+ * Custom post types.
+ */
 require_once get_template_directory() . '/inc/libs.php';
-// require_once get_template_directory() . 'wp_bootstrap_navwalker.php';
+

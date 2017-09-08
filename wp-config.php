@@ -21,7 +21,8 @@
 // ** Configurações do MySQL - Você pode pegar estas informações
 // com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'news_aerolandia');
+// define('DB_NAME', 'word_ad');
+define('DB_NAME', 'theme_adolfo');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
@@ -51,14 +52,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '6eTiU{QqGDBYv[ ?7?dec .Un>,&M|J`iL={NWi|_lv.R|10,K+iy%x&z]dcGSmW');
-define('SECURE_AUTH_KEY',  'Q=p@w3r}ffZAw%=p9b,RD*!r8w-R!8>Gk72zgJyFgI5d$AGc:!Oju|F`w_1lQL+m');
-define('LOGGED_IN_KEY',    '#hw58PU]R|?.M2![O>.]cvtEi}Q[q?1h$m[.lGua(Jo6Z$.9$=<0IIuy.z0 k&.U');
-define('NONCE_KEY',        'n(qhw~e)ClH-lsA^!8};$(_,l<l`5LnV.:KB+/J[sD(MlR/L9H/TLq5ZSlQDaFM ');
-define('AUTH_SALT',        'bzl;08fmyTH{7*|ktF0+=mzKPni`4I+O9WAioi(7t;2h=u-otT4#vQL]3/bTB{F[');
-define('SECURE_AUTH_SALT', '@I?z}SQ1R?uF.q4^_IXi~RB(agH766+]b8,fWj]lGjzg^Mvq9fO>Il-}olq/}fhr');
-define('LOGGED_IN_SALT',   'RVrxGX|_z/kgSSXAC<}r-/FW~XSk*srboFwP0 sf+~,skc?(cWcbwIqz,YNs,rT>');
-define('NONCE_SALT',       '4U~|CS98YLu(SdKARG(:1x<TG&3_~*Dv0R1dOIgxd_<8AAcPsnnP32FZK;#+iK}|');
+define('AUTH_KEY',         '+}$TOzT^$.Mk+|U;N{YC1]YrFP4%v@2?%:`@jPaIoFmqX%7aJ?~SQkr^TXe9CxyY');
+define('SECURE_AUTH_KEY',  '`Tv#P[v52V`QAYj`|dx#;lj)}Qc)Z*9GT!Z{c0=j/rFfCBl8!G#&O2y#*mE1T5 3');
+define('LOGGED_IN_KEY',    '|K9pr_QX9wspc>Edr<HghSWRt!L~p%#$vtTidPRU!;+S/h+i~$vuZ6;Y~J>~s[-x');
+define('NONCE_KEY',        '8qVM)3,b/055sx SRj(x!vBMyva.t34ru,.tNcRMRSfIQ)q~50<k)oejvM(U,X.J');
+define('AUTH_SALT',        'RJ!H#;2mF9T#7_zyFtCgy~HAygTFx,;FY<F0M=_v6qQ6hZAU8Temm2GRwxFeG@^q');
+define('SECURE_AUTH_SALT', 'r@ C8 b3lN9m !2=iZNx1b<d1paZ}PH/y*LH|{$%E[db[,cmUN.L<!PelN[#QXp0');
+define('LOGGED_IN_SALT',   '-=$QN:l|fBMt&xHC& @FT C}r]W~e2h96OOG>OWOaUv46NJ9c@VCC$LQf@Le}e1=');
+define('NONCE_SALT',       ']iFP4n7|?oqAA.0n>JaN.2zbP0#:HigZ3}s8-S%9_18voDBO(:#|(Guke#Cc;kpj');
 
 /**#@-*/
 
@@ -68,7 +69,7 @@ define('NONCE_SALT',       '4U~|CS98YLu(SdKARG(:1x<TG&3_~*Dv0R1dOIgxd_<8AAcPsnnP
  * Você pode ter várias instalações em um único banco de dados se você der
  * um prefixo único para cada um. Somente números, letras e sublinhados!
  */
-$table_prefix  = 'aerowp_n_';
+$table_prefix  = 'ad_work_';
 
 /**
  * Para desenvolvedores: Modo de debug do WordPress.
@@ -81,22 +82,12 @@ $table_prefix  = 'aerowp_n_';
  * Para informações sobre outras constantes que podem ser utilizadas
  * para depuração, visite o Codex.
  *
+ * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
 define('WP_DEBUG', false);
-// define('WP_DEBUG_LOG', true);
-// define('WP_DEBUG_DISPLAY', false);
-// error_reporting(E_ALL);
-define('WP_MEMORY_LIMIT', '96M');
 
 /* Isto é tudo, pode parar de editar! :) */
-/* Multisite */
-define( 'WP_ALLOW_MULTISITE', true );
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', 'localhost');
-define('PATH_CURRENT_SITE', '/wordpress/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
+define('FS_METHOD','direct');
 
 /** Caminho absoluto para o diretório WordPress. */
 if ( !defined('ABSPATH') )
@@ -104,4 +95,3 @@ if ( !defined('ABSPATH') )
 
 /** Configura as variáveis e arquivos do WordPress. */
 require_once(ABSPATH . 'wp-settings.php');
-

@@ -13,117 +13,109 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.css">
-	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/style1.css" rel="stylesheet" media="screen">
 	<?php if ( ! get_option( 'site_icon' ) ) : ?>
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
 	<?php endif; ?>
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.min.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-	<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-<div class="container">
-  <header id="header">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="header_top">
-          <div class="header_top_left">
-            <ul class="top_nav">
-            <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'head',
-                        'depth'          => 2,
-                        'container'      => false,
-                        'menu_class'     => 'top_nav',
-                        'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
-                        'walker'         => new Odin_Bootstrap_Nav_Walker()
-                    )
-                );
-            ?>
-              <!-- <li><a href="index.php">Home</a></li>
-              <li><a href="page.php">About</a></li>
-              <li><a href="contact.php">Contact</a></li>
-              <li><a href="404.php">Error Page</a></li>
-              <li><a href="page.php">Page</a></li> -->
-            </ul>
-          </div>
-          <div class="header_top_right">
-            <form action="#" class="navbar-form search_form">
-              <input type="search" class="form-control" value="<?php echo get_search_query(); ?>" name="s" id="navbar-search" placeholder="Busca">
-              <input type="submit" value="">
-            </form>
-          </div>
-        </div>
-        <div class="header_bottom">
-          <div class="header_bottom_left">
-			<?php //if ( is_home() ) : ?>
-          	<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<strong><?php bloginfo( 'name' ); ?></strong>
-				<span><?php bloginfo( 'description' ); ?></span>
-			</a>
-			<?php //else : ?>
-		</div>
-          <!-- banner 1 header -->
-          <?php if ( get_header_image() ) : ?>
-			<div class="header_bottom_right">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-				</a>
-			</div>
-		<?php endif; ?>
-          <!-- <div class="header_bottom_right"><a href="#"><img src="images/addbanner_728x90_V1.png" alt=""></a></div> -->
-        </div>
-      </div>
-    </div>
-  </header>
+	<main class="wrapper">
 
-
-
-	<header id="header" role="banner">
-		<div class="container">
-
-
-			<div id="main-navigation" class="navbar navbar-default">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
-					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand visible-xs-block" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
+			<nav class="navigation">
+				<section class="container">
+					<a class="navigation-title" href="https://milligram.github.io/">
+						
+						<h1 class="title">Milligram</h1>
 					</a>
-				</div>
-				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
-					<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'main-menu',
-								'depth'          => 2,
-								'container'      => false,
-								'menu_class'     => 'nav navbar-nav',
-								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
-								'walker'         => new Odin_Bootstrap_Nav_Walker()
-							)
-						);
-					?>
-				</nav><!-- .navbar-collapse -->
-			</div><!-- #main-navigation-->
+					<ul class="navigation-list float-right">
+						<li class="navigation-item">
+							<a class="navigation-link" href="#popover-grid" data-popover>Docs</a>
+							<div class="popover" id="popover-grid">
+								<ul class="popover-list">
+									<li class="popover-item"><a class="popover-link" href="#getting-started" title="Getting Started">Getting Started</a></li>
+									<li class="popover-item"><a class="popover-link" href="#typography" title="Typography">Typography</a></li>
+									<li class="popover-item"><a class="popover-link" href="#blockquotes" title="Blockquotes">Blockquotes</a></li>
+									<li class="popover-item"><a class="popover-link" href="#buttons" title="Buttons">Buttons</a></li>
+									<li class="popover-item"><a class="popover-link" href="#lists" title="Lists">Lists</a></li>
+									<li class="popover-item"><a class="popover-link" href="#forms" title="Forms">Forms</a></li>
+									<li class="popover-item"><a class="popover-link" href="#tables" title="Tables">Tables</a></li>
+									<li class="popover-item"><a class="popover-link" href="#grids" title="Grids">Grids</a></li>
+									<li class="popover-item"><a class="popover-link" href="#codes" title="Codes">Codes</a></li>
+									<li class="popover-item"><a class="popover-link" href="#utilities" title="Utilities">Utilities</a></li>
+									<li class="popover-item"><a class="popover-link" href="#tips" title="Tips">Tips</a></li>
+									<li class="popover-item"><a class="popover-link" href="#browser-support" title="Browser Support">Browser Support</a></li>
+									<li class="popover-item"><a class="popover-link" href="#examples" title="Examples">Examples</a></li>
+									<li class="popover-item"><a class="popover-link" href="#contributing" title="Contributing">Contributing</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="navigation-item">
+							<a class="navigation-link" href="#popover-support" data-popover>Support</a>
+							<div class="popover" id="popover-support">
+								<ul class="popover-list">
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram" title="On Github">On Github</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://codepen.io/milligramcss" title="On Codepen">On Codepen</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://facebook.com/milligramcss" title="On Facebook">On Facebook</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://twitter.com/milligramcss" title="On Twitter">On Twitter</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram/issues/new" title="Need help?">Need help?</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram#license" title="License">License</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram/releases" title="Versions">Versions</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
 
-		</div><!-- .container-->
-	</header><!-- #header -->
+				</section>
+			</nav>
+		</main>
+						<?php
+							// wp_nav_menu(
+							// 	array(
+							// 		'theme_location' => 'top-menu',
+							// 		'depth'          => 2,
+							// 		'container'      => false,
+							// 		'menu_class'     => 'nav navbar-nav',
+							// 		'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+							// 		'walker'         => new Odin_Bootstrap_Nav_Walker()
+							// 	)
+							// );
+						?>
 
-	<div id="wrapper" class="container">
+						<!-- <form method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+							<label for="navbar-search" class="sr-only">
+								<?php _e( 'Search:', 'odin' ); ?>
+							</label>
+							<div class="form-group">
+								<input type="search" value="<?php echo get_search_query(); ?>" class="form-control" name="s" id="navbar-search" />
+							</div>
+							<button type="submit" class="btn btn-default"><?php _e( 'Search', 'odin' ); ?></button>
+						</form> -->
+
+
+
+	<?php get_template_part('Carousel-home'); ?>
+
+	<div id="wrapper" class="container topo">
 		<div class="row">
+
+		<?php /*
+		<div class="tds_video banner">
+		    <div class='site-logo img'>
+		      <a href="<?php echo home_url(); echo esc_attr( get_theme_mod( 'placeholder_link' ) ); ?>">
+		      <?php if ( get_theme_mod( 'imgslug_banner' ) ) { ?>
+		        <img src='<?php echo esc_url( get_theme_mod( 'imgslug_banner' ) ); ?>' alt='<?php echo esc_attr( get_theme_mod( 'placeholder_text' ) ); ?>'>
+		      <?php } else{
+		        //no image banner
+		       } ?>
+		      </a>
+		    </div>
+		</div><br/> */
+		?>

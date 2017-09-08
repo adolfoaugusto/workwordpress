@@ -7,8 +7,13 @@
  */
 
 if ( ! function_exists( 'odin_classes_page_full' ) ) {
+
 	/**
 	 * Classes page full.
+	 *
+	 * @since 2.2.0
+	 *
+	 * @return string Classes name.
 	 */
 	function odin_classes_page_full() {
 		return 'col-md-12';
@@ -16,8 +21,13 @@ if ( ! function_exists( 'odin_classes_page_full' ) ) {
 }
 
 if ( ! function_exists( 'odin_classes_page_sidebar' ) ) {
+
 	/**
 	 * Classes page with sidebar.
+	 *
+	 * @since 2.2.0
+	 *
+	 * @return string Classes name.
 	 */
 	function odin_classes_page_sidebar() {
 		return 'col-md-9';
@@ -25,10 +35,14 @@ if ( ! function_exists( 'odin_classes_page_sidebar' ) ) {
 }
 
 if ( ! function_exists( 'odin_classes_page_sidebar_aside' ) ) {
+
 	/**
 	 * Classes aside of page with sidebar.
 	 *
-	*/
+	 * @since 2.2.0
+	 *
+	 * @return string Classes name.
+	 */
 	function odin_classes_page_sidebar_aside() {
 		return 'col-md-3 hidden-xs hidden-print widget-area';
 	}
@@ -38,6 +52,8 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 
 	/**
 	 * Print HTML with meta information for the current post-date/time and author.
+	 *
+	 * @since 2.2.0
 	 */
 	function odin_posted_on() {
 		if ( is_sticky() && is_home() && ! is_paged() ) {
@@ -57,8 +73,11 @@ if ( ! function_exists( 'odin_posted_on' ) ) {
 }
 
 if ( ! function_exists( 'odin_paging_nav' ) ) {
+
 	/**
 	 * Print HTML with meta information for the current post-date/time and author.
+	 *
+	 * @since 2.2.0
 	 */
 	function odin_paging_nav() {
 		$mid  = 2;     // Total of items that will show along with the current page.
@@ -70,10 +89,13 @@ if ( ! function_exists( 'odin_paging_nav' ) ) {
 }
 
 if ( ! function_exists( 'odin_the_custom_logo' ) ) {
+
 	/**
 	 * Displays the optional custom logo.
 	 *
 	 * Does nothing if the custom logo is not available.
+	 *
+	 * @since Odin 2.2.10
 	 */
 	function odin_the_custom_logo() {
 		if ( function_exists( 'the_custom_logo' ) ) {

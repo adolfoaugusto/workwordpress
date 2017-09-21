@@ -12,6 +12,7 @@ Version: 1.0.1
 */
 
 /*header*/
-.header{background: #eee; border-top: 3px solid #222; padding: 22px;}
+.header{background: #eee; border-top: 3px solid #222; padding: 22px 0;}
 .logo{ max-width: 160px;}
-.navbar{}
+.slider-noticia{margin-top: 30px;}
+.itens-destaque{background: #fff; margin-top: 30px;}

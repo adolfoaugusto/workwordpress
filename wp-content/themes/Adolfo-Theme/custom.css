@@ -1,0 +1,8 @@
+/* Modifications styles menu*/
+body .home div.topo,
+body .blog div.topo {
+    margin-top: 50px;
+}
+.down {
+    min-height: 6em;
+}
